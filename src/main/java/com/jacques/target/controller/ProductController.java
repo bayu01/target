@@ -35,6 +35,8 @@ public class ProductController {
 
 		ProductWrapper productWrapper = restTemplate.getForObject(URI_TEMPLATE, ProductWrapper.class, uriVariables);
 
+		// TODO: Use the priceService to obtain a product price. Consider the use of
+		// apache's BeanUtils to merge beans.
 		Optional<Price> price = priceService.getPriceById(id);
 
 		return productWrapper;
