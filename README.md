@@ -36,7 +36,7 @@ The application expects a local MongoDb server (`mongod.exe`) running under the 
 
 ### Source Code
 
-Use Git or SVN to clone this repository `git clone https://github.com/bayu01/target.git` .
+Use Git clone this repository `git clone https://github.com/bayu01/target.git` .
 
 
 
