@@ -8,16 +8,16 @@ pipeline {
 	    	checkout scm
             }
         }
+	stage('Debugging') {
+            steps {
+                sh 'java -version'
+            }
+        }
         stage ('Running tests') {
             steps {
                 sh '''
                     ./gradlew test
                 '''
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
             }
         }
     }
