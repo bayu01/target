@@ -11,8 +11,7 @@ pipeline {
         stage ('Running tests') {
             steps {
                 sh '''
-                    echo "PATH = ${PATH}"
-                   ./gradlew test
+                    gradlew test
                 '''
             }
         }
