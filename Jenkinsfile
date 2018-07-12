@@ -12,7 +12,7 @@ pipeline {
             steps {
                 sh '''
                     echo "PATH = ${PATH}"
-                    gradlew test
+                   ./gradlew test
                 '''
             }
         }
