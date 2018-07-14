@@ -10,7 +10,7 @@ pipeline {
         }
 	stage('Debugging') {
             steps {
-                sh 'java -version'
+                sh 'readlink -e $(which java)'
             }
         }
         stage ('Running tests') {
