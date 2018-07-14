@@ -10,7 +10,8 @@ pipeline {
         }
 	stage('Debugging') {
             steps {
-                sh 'readlink -e $(which java)'
+                //sh 'readlink -e $(which java)'
+		sh 'yum list'
             }
         }
         stage ('Running tests') {
